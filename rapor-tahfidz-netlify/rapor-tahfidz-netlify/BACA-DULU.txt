@@ -1,0 +1,29 @@
+DEPLOY RAPOR TAHFIDZ KE NETLIFY (TANPA KARTU, TANPA GITHUB)
+
+CARA 1 - Drag and drop (paling cepat)
+1. Ekstrak zip ini sehingga ada folder "rapor-tahfidz-netlify".
+2. Buka https://app.netlify.com/drop  (login dulu dengan email/GitHub).
+3. Seret FOLDER "rapor-tahfidz-netlify" ke kotak yang tersedia.
+4. Tunggu selesai, Anda mendapat alamat https://xxxx.netlify.app
+5. Opsional: Site configuration > Change site name untuk mengganti alamat.
+
+CARA 2 - Lewat GitHub
+1. Buat repo baru, upload isi folder ini (index.html, netlify.toml, _headers, robots.txt).
+2. Netlify > Add new project > Import from GitHub > pilih repo.
+3. Build command: kosongkan. Publish directory: .   (titik)
+4. Deploy.
+
+MEMPERBARUI DATA
+Data santri tertanam di index.html. Untuk memperbarui, ganti index.html
+dengan versi terbaru lalu deploy ulang (Cara 1: Deploys > drag folder baru
+ke halaman Deploys; Cara 2: commit file baru ke GitHub).
+
+CATATAN
+- Perubahan yang dibuat di halaman admin hanya tersimpan di browser yang
+  dipakai (localStorage), tidak dibagikan ke perangkat lain.
+- Font dan pustaka PDF/Excel dimuat dari internet (Google Fonts, cdnjs),
+  jadi perangkat butuh koneksi saat membuka.
+- Data nama, NIM, dan kehadiran ada di dalam halaman. Siapapun yang punya
+  alamat situs bisa melihatnya lewat view-source. Jangan sebarkan alamat
+  ke publik. Isi _headers dan robots.txt hanya meminta mesin pencari tidak
+  mengindeks, bukan perlindungan sandi.
